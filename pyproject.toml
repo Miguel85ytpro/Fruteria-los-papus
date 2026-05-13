@@ -1,0 +1,14 @@
+[project]
+name = "fruteria-los-papus"
+version = "0.1.0"
+description = "Sistema de gestión de inventario para Frutería Los Papus"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=3.0.0",
+    "pymongo[srv]>=4.6.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
