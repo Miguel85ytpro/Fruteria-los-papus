@@ -19,7 +19,6 @@ def login():
     if request.method == 'POST':
         u = request.form.get('usuario')
         p = request.form.get('password')
-        # Buscar usuario en el nuevo cluster
         user = usuarios_col.find_one({"usuario": u, "password": p})
         if user:
             session['user'] = u
